@@ -1,0 +1,153 @@
+<div class="wrapper">
+    <header id="pi-header">
+        <div id="header-top">
+            <div class="pi-header-fixed">
+                <div class="toggle-menu toggle-active" (click)="setNavigationActive()">
+                    <span class="item item-1"></span>
+                    <span class="item item-2"></span>
+                    <span class="item item-3"></span>
+                </div>
+                <nav class="pi-navigation" [ngClass]="{'pi-navigation-active': active}">
+                    <ul class="pi-menulist">
+                        <li>
+                            <a routerLink="/home">HOME</a>
+                            <span class="submenu-toggle"><i class="fa fas fa-angle-right"></i></span>
+                        </li>
+                        <li>
+                            <a>FEATURES</a>
+                            <span class="submenu-toggle"><i class="fa fas fa-angle-right"></i></span>
+                        </li>
+                        <li>
+                            <a>ABOUT ME</a>
+                            <span class="submenu-toggle"><i class="fa fas fa-angle-right"></i></span>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="toggle-social item top-search">
+                        <input type="text" title="top-search" placeholder="Search"/>
+                        <i class="fa fas fa-search"></i>
+                    </div>
+                    <!--<div class="toggle-social item">-->
+                    <!--<i class="fa glyphicon glyphicon-user"></i>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+        </div>
+        <div class="header-logo text-center"><a class="pi-logo logo" href="http://aresivel.wiloke.com"><img
+            src="http://aresivel.wiloke.com/wp-content/uploads/2016/07/logo.png" alt="Aresivel - Wordpress Blog Theme"></a>
+        </div>
+    </header>
+    <section class="main-content pi-standard right-sidebar">
+        <router-outlet></router-outlet>
+    </section>
+
+    <footer id="pi-footer" class="background-image clearfix">
+        <div class="pi-container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div id="pi_contactinfo-2" class="widget widget_pi_contactinfo"><h4 class="widget-title">Contact
+                        Us</h4>
+                        <div class="text-italic">
+                            <p>Morbi blandit est quis dictum consequat. In hendrerit placerat faucibus.</p>
+                        </div>
+                        <div class="item-icon-left">
+                            <i class="fa fas fa-map-marker"></i>
+                            <p>121 King Street, Melbourne Victoria 3000 Australia</p></div>
+                        <div class="item-icon-left">
+                            <i class="fa fas fa-envelope"></i>
+                            <p><a href="mailto:blogger@info.com">blogger@info.com</a></p>
+                        </div>
+                        <div class="item-icon-left">
+                            <i class="fa fas fa-phone"></i>
+                            <p>+123 456 789</p></div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div id="pi_postslisting-3" class="widget postslisting"><h4 class="widget-title">RECENT POSTS</h4>
+                        <div class="widget-list">
+                            <div class="item">
+                                <div class="item-image">
+                                    <div class="image-cover">
+                                        <a href="http://aresivel.wiloke.com/hip-hop-dance-anytime-anywhere/">
+                                            <img width="425" height="255"
+                                                 src="http://aresivel.wiloke.com/wp-content/uploads/2015/07/18-425x255.jpg"
+                                                 class="attachment-pi-postlisting size-pi-postlisting wp-post-image"
+                                                 alt=""
+                                                 style="height: 100%; width: auto;"> </a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <h3 class="item-title" data-number-line="2"
+                                        style="display: block; max-height: 48px; overflow: hidden;">
+                                        <a href="http://aresivel.wiloke.com/hip-hop-dance-anytime-anywhere/">Hip Hop
+                                            dance anytime
+                                            anywhere</a>
+                                    </h3>
+                                    <span class="item-meta">July 21, 2015</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-image">
+                                    <div class="image-cover">
+                                        <a href="http://aresivel.wiloke.com/a-elegant-wordpress-blog-theme/">
+                                            <img width="425" height="255"
+                                                 src="http://aresivel.wiloke.com/wp-content/uploads/2015/07/5-425x255.jpg"
+                                                 class="attachment-pi-postlisting size-pi-postlisting wp-post-image"
+                                                 alt=""
+                                                 style="height: 100%; width: auto;"> </a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <h3 class="item-title" data-number-line="2"
+                                        style="display: block; max-height: 48px; overflow: hidden;">
+                                        <a href="http://aresivel.wiloke.com/a-elegant-wordpress-blog-theme/">A Elegant
+                                            WordPress Blog
+                                            Theme</a>
+                                    </h3>
+                                    <span class="item-meta">July 20, 2015</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div id="pi_contactinfo-3" class="widget widget_pi_contactinfo"><h4 class="widget-title">Contact
+                        Us</h4>
+                        <div class="text-italic">
+                            <p>Morbi blandit est quis dictum consequat. In hendrerit placerat faucibus.</p>
+                        </div>
+                        <div class="item-icon-left">
+                            <i class="fa 	glyphicon glyphicon-map-marker"></i>
+                            <p>121 King Street, Melbourne Victoria 3000 Australia</p></div>
+                        <div class="item-icon-left">
+                            <i class="fa glyphicon glyphicon-envelope"></i>
+                            <p><a href="mailto:blogger@info.com">blogger@info.com</a></p>
+                        </div>
+                        <div class="item-icon-left">
+                            <i class="fa glyphicon glyphicon-earphone"></i>
+                            <p>+123 456 789</p></div>
+                    </div>
+                </div>
+                <!--<div class="footer-column"></div>-->
+                <!--<div class="footer-column"></div>-->
+            </div>
+            <div class="footer-social text-center">
+                <div class="pi-social-rotate">
+                    <a href="https://www.facebook.com/wilokewp/" target="_blank">
+                        <i class="fa fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/wilokethemes" target="_blank">
+                        <i class="fa fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="pi-copyright copyright text-center text-italic">
+                <p>Copyrights © 2018 all rights reserved by DJQ</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+

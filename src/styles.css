@@ -1,0 +1,97 @@
+/*
+Error: Invalid CSS after "...lor}: #{$value}": expected "{", was ";"
+        on line 4 of ../node_modules/bootstrap/scss/_root.scss
+        from line 11 of ../node_modules/bootstrap/scss/bootstrap.scss
+        from line 2 of styles.scss
+
+1: :root {
+2:   // Custom variable values only support SassScript inside `#{}`.
+3:   @each $color, $value in $colors {
+4:     --#{$color}: #{$value};
+5:   }
+6: 
+7:   @each $color, $value in $theme-colors {
+8:     --#{$color}: #{$value};
+9:   }
+
+Backtrace:
+../node_modules/bootstrap/scss/_root.scss:4
+../node_modules/bootstrap/scss/bootstrap.scss:11
+styles.scss:2
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1132:in `tok!'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:665:in `block'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:685:in `block_child'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:674:in `block_contents'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:666:in `block'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:307:in `each_directive'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:222:in `special_directive'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:197:in `directive'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:685:in `block_child'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:674:in `block_contents'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:666:in `block'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:658:in `ruleset'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:684:in `block_child'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:674:in `block_contents'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:125:in `stylesheet'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:41:in `parse'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:406:in `_to_tree'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:312:in `to_tree'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `block in with_import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `with_import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `map'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `block in with_import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `with_import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin.rb:82:in `update_stylesheets'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:51:in `process_result'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+E:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/bin/scss:13:in `<top (required)>'
+E:/Ruby24-x64/bin/scss:22:in `load'
+E:/Ruby24-x64/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...lor}: #{$value}\": expected \"{\", was \";\"\A         on line 4 of ../node_modules/bootstrap/scss/_root.scss\A         from line 11 of ../node_modules/bootstrap/scss/bootstrap.scss\A         from line 2 of styles.scss\A \A 1: :root {\A 2:   // Custom variable values only support SassScript inside `#{}`.\A 3:   @each $color, $value in $colors {\A 4:     --#{$color}: #{$value};\A 5:   }\A 6: \A 7:   @each $color, $value in $theme-colors {\A 8:     --#{$color}: #{$value};\A 9:   }"; }
